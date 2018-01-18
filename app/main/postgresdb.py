@@ -104,7 +104,3 @@ class PostgresDB:
 	if ret == False:
 		return []
 	return self.cursor.fetchall()
-
-
-
-

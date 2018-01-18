@@ -1,4 +1,3 @@
-
 # coding=utf-8
 import decimal
 from . import main
@@ -14,7 +13,6 @@ def apply_utf8(response):
 		#response.headers['Access-Control-Allow-Credentials'] = 'true'
 	return response
 
-
 @main.route('/', methods=['GET', 'POST'])
 def index():
 	return 'index()'
@@ -22,8 +20,6 @@ def index():
 
 def response_fail_message(ret,errorMsg):
 	return json.dumps({"ret":ret,"errorMsg":errorMsg,"data":""},cls=DecimalEncoder)
-
-
 
 def response_success_data(data):
 	return json.dumps({"ret":0,"errorMsg":"","data":data},cls=DecimalEncoder)
@@ -34,6 +30,4 @@ class DecimalEncoder(json.JSONEncoder):
         if isinstance(o, decimal.Decimal):
             return float(o)
         return super(DecimalEncoder, self).default(o)
-
-
 

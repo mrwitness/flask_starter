@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python manage.py >"server.log" 2>&1 &
+python manage.py >"../server.log" 2>&1 &

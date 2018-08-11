@@ -1,5 +1,12 @@
 # flask_starter
+my starter of python flask.
 
-to start server
-1 pip install -r requirements/common.txt
-2 python manage.py
+#### step1
+pip install -r requirements/common.txt
+
+#### step2
+python manage.py
+
+### or
+check out shell file from sh.
+
